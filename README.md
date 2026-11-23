@@ -15,7 +15,7 @@ Le fichier `.nojekyll` indique à GitHub de servir les fichiers sans les transfo
 ## Avant de partager le lien
 
 - **Bot public** : dans le [portail développeur Discord](https://discord.com/developers/applications), application Maude, onglet **Bot**, l'option **Public Bot** doit être activée pour que d'autres serveurs puissent l'ajouter.
-- **Fonctions de guilde** : les événements, `/metier`, `/wow` et Maude IA ne marchent que sur les serveurs listés dans `WOW_GUILD_IDS` (`.env` de MaudeBot). Le site le dit dans la foire aux questions.
+- **Fonctions de guilde** : les événements, `/metier` et `/wow` ne marchent que sur les serveurs listés dans `WOW_GUILD_IDS` (`.env` de MaudeBot). Le site le dit dans la foire aux questions.
 
 ## Contenu
 
