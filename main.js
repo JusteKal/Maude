@@ -1,6 +1,4 @@
 (() => {
-	document.documentElement.classList.add("js");
-
 	const nav = document.querySelector(".nav");
 	const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 8);
 	window.addEventListener("scroll", onScroll, { passive: true });
@@ -34,21 +32,4 @@
 	const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 	if (reduceMotion.matches) video.removeAttribute("autoplay");
 	if (reduceMotion.matches) video.pause();
-
-	const reveals = document.querySelectorAll(".reveal");
-	if (!("IntersectionObserver" in window)) {
-		for (const el of reveals) el.classList.add("visible");
-		return;
-	}
-	const observer = new IntersectionObserver(
-		(entries) => {
-			for (const entry of entries) {
-				if (!entry.isIntersecting) continue;
-				entry.target.classList.add("visible");
-				observer.unobserve(entry.target);
-			}
-		},
-		{ rootMargin: "0px 0px -8% 0px" },
-	);
-	for (const el of reveals) observer.observe(el);
 })();
