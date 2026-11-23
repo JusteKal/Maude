@@ -34,6 +34,7 @@
 					<a href="#fonctionnalites">Fonctionnalités</a>
 					<a href="#commandes">Commandes</a>
 					<a href="#faq">Questions</a>
+					<a href="#" data-status-link hidden>Statut</a>
 				</nav>
 				<a class="btn btn-ghost btn-small invite" href="https://discord.com/oauth2/authorize?client_id=1573111378175336588&scope=bot%20applications.commands&permissions=564324611779670" rel="noopener">Ajouter à Discord</a>
 				<button class="menu" id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Ouvrir le menu">
@@ -354,7 +355,11 @@
 						</details>
 						<details>
 							<summary>Elle est en ligne tout le temps ?</summary>
-							<p>Oui, elle tourne en continu et sa disponibilité est vérifiée chaque minute. En cas de panne, elle redémarre toute seule.</p>
+							<p>
+								Oui, elle tourne en continu et sa disponibilité est vérifiée chaque minute. En cas de panne, elle redémarre toute seule.<span data-status-show hidden>
+									Tu peux suivre son état en direct sur <a class="link" href="#" data-status-link>la page de statut</a>.</span
+								>
+							</p>
 						</details>
 						<details>
 							<summary>Pourquoi « Maude » ?</summary>
@@ -379,6 +384,7 @@
 		<footer class="foot">
 			<div class="wrap foot-inner">
 				<p class="brand small"><img src="assets/emotes/maude.png" alt="" width="24" height="24" />Maude</p>
+				<a class="foot-link" href="#" data-status-link hidden>Statut des services</a>
 				<p>Maude n'est pas affiliée à Discord ni à Blizzard Entertainment. World of Warcraft est une marque de Blizzard Entertainment.</p>
 			</div>
 		</footer>

@@ -1,4 +1,16 @@
 (() => {
+	/** Adresse de la page de statut publique (MaudeStatus). Vide = liens masqués. */
+	const STATUS_URL = "https://localhost:3000/status";
+
+	if (STATUS_URL) {
+		for (const link of document.querySelectorAll("[data-status-link]")) {
+			link.href = STATUS_URL;
+			link.rel = "noopener";
+			link.hidden = false;
+		}
+		for (const el of document.querySelectorAll("[data-status-show]")) el.hidden = false;
+	}
+
 	const nav = document.querySelector(".nav");
 	const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 8);
 	window.addEventListener("scroll", onScroll, { passive: true });

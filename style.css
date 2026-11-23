@@ -895,6 +895,27 @@ h2 {
 	gap: 16px;
 }
 
+.link {
+	color: var(--text);
+	text-decoration: underline;
+	text-decoration-color: var(--hairline-strong);
+	text-underline-offset: 3px;
+	transition: text-decoration-color 150ms var(--ease);
+}
+
+.link:hover {
+	text-decoration-color: currentColor;
+}
+
+.foot-link {
+	margin-left: auto;
+	color: var(--text-2);
+}
+
+.foot-link:hover {
+	color: var(--text);
+}
+
 .brand.small {
 	font-size: 15px;
 	color: var(--text-2);
